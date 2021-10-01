@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600&display=swap');
+html {
+    background-color: #1C243C;
+    /* max-width: 1440px; */
+    height: 100vh;
+    color: #fff;
+    font-family: 'Spectral', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #212c4d;
+    position: relative;
+    top: -5px;
+}
+
+.topnav a:hover {
+    background-color: #25b4d8;
+    color: black;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.icon {
+    display: none;
+}
+
+.mylinks {
+    display: flex;
+}
+
+ul {}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+/* li a {
+    position: relative;
+    top: -10px;
+} */
+
+body {
+    height: 100%;
+}
+
+section {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 10px solid #212c4d;
+    border-radius: 15px;
+    padding: 20px;
+    height: 50%;
+    text-align: center;
+}
+
+article h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+article:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+/* article[class=one] {
+    margin-right: 20px;
+}
+
+article[class=three] {
+    margin-left: 20px;
+} */
+
+article[class="one"]:hover {
+    border-color: #fc23f4;
+}
+
+article[class="two"]:hover {
+    border-color: #25b4d8;
+}
+
+article[class="three"]:hover {
+    border-color: #14c71a;
+}
+
+hr {
+    width: 100%;
+    padding: 0;
+    color: #212c4d;
+}
+
+span {
+    display: block;
+}
+
+p {
+    font-family: 'Inria Serif', serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+p>span {
+    text-align: center;
+    padding: 5px;
+}
+
+p[class=top] {
+    text-align: center;
+    font-size: 14px;
+}
+
+.pur {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #fc23f4;
+    color: #fc23f4;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pur:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.pur:hover:after {
+    height: 100%;
+}
+
+.pur:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: #fc23f4;
+}
+
+article[class="two"] .pur {
+    border-color: #25b4d8;
+    color: #25b4d8;
+}
+
+article[class="two"] .pur:hover {
+    border-color: #25b4d8;
+    color: #fff;
+}
+
+article[class="two"] .pur:hover::after {
+    background-color: #25b4d8;
+}
+
+article[class="three"] .pur {
+    border-color: #14c71a;
+    color: #14c71a;
+}
+
+article[class="three"] .pur:hover {
+    border-color: #14c71a;
+    color: #fff;
+}
+
+article[class="three"] .pur:hover::after {
+    background-color: #14c71a;
+}
+
+
+/* Style the navigation menu */
+
+.topnav {
+    overflow: hidden;
+    background-color: #212c4d;
+    position: relative;
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.topnav .mylinks {
+    display: none;
+}
+
+
+/* Style navigation menu links */
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+
+/* Style the hamburger menu */
+
+.topnav a.icon {
+    background: #212c4d;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/* Add a grey background color on mouse-over */
+
+.topnav a:hover {
+    background-color: #25b4d8;
+    color: black;
+    z-index: 1;
+}
+
+
+/* Style the active link (or home/logo) */
+
+.active {
+    background-color: #25b4d8;
+    color: white;
+}
+
+
+/* end of part 1  */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap');
+label {
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    font-size: 1.1em;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto !important;
+    float: none !important;
+    height: 100%;
+}
+
+footer {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 390px;
+    background-color: #1C2444;
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 1.5em;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+}
+
+ul:is(.Company,
+.info,
+.resources) li a {
+    line-height: 2em;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+ul:is(.Company,
+.info,
+.resources) li a:hover {
+    color: #07eee2;
+}
+
+section[class="one"] {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+input[type="email"] {
+    height: 40px;
+    border: 1px solid #0735ee;
+    margin-right: 5px;
+    font-size: ;
+}
+
+input[type="email"]:focus {
+    outline: 1px solid #0735ee;
+}
+
+button {
+    min-width: 100px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #0735ee;
+    color: #0735ee;
+    font-weight: 900;
+}
+
+button:hover {
+    color: #fff;
+}
+
+button:hover:after {
+    width: 100%;
+}
+
+button:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #0735ee;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-evenly;
+    font-size: 1.5em;
+    position: relative;
+    left: -40px;
+    width: 180px;
+}
+
+i[class="fab fa-facebook"]:hover {
+    color: #4267B2;
+}
+
+i[class="fab fa-twitter"]:hover {
+    color: #1DA1F2;
+}
+
+i[class="fab fa-instagram"]:hover {
+    color: #E1306C;
+}
+
+@media screen and (min-width: 950px) {
+    section {
+        justify-content: center;
+    }
+    article[class=one] {
+        margin-right: 40px;
+    }
+    article[class=three] {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    section {
+        font-size: 0.8em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    ul:is(.Company,
+    .info,
+    .resources) li a {
+        font-size: 1em;
+        line-height: normal;
+    }
+    p[class='top'] {
+        font-weight: 300;
+        font-size: 10px;
+    }
+    article h1 {
+        /* font-size: 24px; */
+    }
+    .pur {
+        height: 20px;
+        font-size: 14px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    section {
+        flex-direction: column;
+        height: auto;
+    }
+    article {
+        width: 90%;
+        height: auto;
+        border: 1px solid #212c4d;
+        height: auto;
+    }
+    article:hover {
+        transform: unset;
+    }
+    .pur:hover {
+        transform: unset;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    ul:is(.Company,
+    .info,
+    .resources) li a {
+        line-height: unset;
+        font-size: 14px;
+    }
+    p[class='pr'] {
+        text-align: center;
+    }
+    .social {
+        width: 100%;
+        justify-content: center;
+        font-size: 20px;
+    }
+}
