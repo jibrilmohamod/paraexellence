@@ -13,22 +13,28 @@
 
 
 <body>
-
-
-    <nav class="topnav">
-        <a href="" class="active">ParExellence Prints</a>
-        <ul class="mylinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <i class="fas fa-print"></i>Parexellence Prints
+            </a>
+        </div>
+        <div class="nav-links">
+            <i class="fas fa-bars" id="menu"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <i class="fas fa-times" id="close"></i>
+        </div>
     </nav>
 
+
+
     <section class="tres">
-        <article class="one">
+        <article class="one tres-col">
             <p class="top">BASIC</p>
             <h1>100GB</h1>
             <p>1 month, then $1.7/month</p>
@@ -40,7 +46,7 @@
                 <span> &#x2713; Extra member benefits</span>
             </p>
         </article>
-        <article class="two">
+        <article class="two tres-col">
             <p class="top">STANDARD</p>
             <h1>200GB</h1>
             <p>1 month, then $2.9/month</p>
@@ -52,7 +58,7 @@
                 <span> &#x2713; Extra member benefits</span>
             </p>
         </article>
-        <article class="three">
+        <article class="three tres-col">
             <p class="top">PREMIUM</p>
             <h1>2TB</h1>
             <p>1 month, then $8.9/month</p>
@@ -66,7 +72,7 @@
         </article>
     </section>
     <footer>
-        <section class="one">
+        <section class="footer-col wan">
             <ul class="info">
                 <label for="info">
                     INFO
@@ -144,8 +150,8 @@
                 </li>
         </section>
 
-        <div class="two">
-            <form action="">
+        <div class="footer-col wot">
+            <form action="" class="woti">
                 <p>
                     subscribe to our newsletter
                 </p>
@@ -154,37 +160,31 @@
                         Subscribe
                     </button>
             </form>
+            <div class="woti">
+                <p class="pr">
+                    Follow us
+                </p>
+                <ul class="social">
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+            </div>
 
-            <p class="pr">
-                Follow us
-            </p>
-            <ul class="social">
-                <li>
-                    <a href="">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
         </div>
     </footer>
     <script>
-        function myFunction() {
-            var x = document.querySelector(".mylinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
     </script>
 </body>
 
