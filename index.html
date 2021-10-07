@@ -16,19 +16,21 @@
     <nav>
         <div class="logo">
             <a href="index.html">
-                <i class="fas fa-print"></i>Parexellence Prints
+                Parexellence Prints
             </a>
         </div>
-        <div class="nav-links">
-            <i class="fas fa-bars" id="menu"></i>
+        <div class="menu">
+            <i class="fas fa-times" onclick="hide()"></i>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
-            <i class="fas fa-times" id="close"></i>
         </div>
+        <i class="fas fa-bars" onclick="show()"></i>
+
+
     </nav>
 
 
@@ -71,120 +73,133 @@
             </p>
         </article>
     </section>
-    <footer>
-        <section class="footer-col wan">
-            <ul class="info">
-                <label for="info">
+    <section class="footer">
+
+        <footer>
+            <section class="footer-col wan">
+                <ul class="info">
+                    <label for="info">
                     INFO
                 </label>
-                <li>
-                    <a href="">
+                    <li>
+                        <a href="">
                         Formats
                     </a>
-                </li>
-                <li>
-                    <a href="">
+                    </li>
+                    <li>
+                        <a href="">
                         Compression
                     </a>
-                </li>
-                <li>
-                    <a href="">
+                    </li>
+                    <li>
+                        <a href="">
                         Pricing
                     </a>
-                </li>
-                <li>
-                    <a href="">
+                    </li>
+                    <li>
+                        <a href="">
                         FAQ
                     </a>
-                </li>
-                <li>
-                    <a href="">
+                    </li>
+                    <li>
+                        <a href="">
                         Status
                     </a>
-                </li>
-            </ul>
-            <ul class="resources">
-                <label for="resources">
+                    </li>
+                </ul>
+                <ul class="resources">
+                    <label for="resources">
                     RESOURCES
                 </label>
-                <li>
-                    <a href="">
+                    <li>
+                        <a href="">
                         Developer API
                     </a>
-                </li>
-                <li>
-                    <a href="">
+                    </li>
+                    <li>
+                        <a href="">
                         Blog
                     </a>
-                </li>
-                <li>
-                    <a href="">
+                    </li>
+                    <li>
+                        <a href="">
                         Tools
                     </a>
-                </li>
+                    </li>
 
-            </ul>
-            <ul class="Company">
-                <label for="Company">
+                </ul>
+                <ul class="Company">
+                    <label for="Company">
                     COMPANY
                 </label>
-                <li>
-                    <a href="">
+                    <li>
+                        <a href="">
                         About Us
                     </a>
-                </li>
-                <li>
-                    <a href="">
+                    </li>
+                    <li>
+                        <a href="">
                         Sustainability
                     </a>
-                </li>
-                <li>
-                    <a href="">
+                    </li>
+                    <li>
+                        <a href="">
                         Terms 
                     </a>
-                </li>
-                <li>
-                    <a href="">
+                    </li>
+                    <li>
+                        <a href="">
                         Privacy Policy
                     </a>
-                </li>
-        </section>
+                    </li>
+            </section>
 
-        <div class="footer-col wot">
-            <form action="" class="woti">
-                <p>
-                    subscribe to our newsletter
-                </p>
-                <input type="email" placeholder="Enter your email">
-                <button>
+            <div class="footer-col wot">
+                <form action="" class="woti">
+                    <p>
+                        subscribe to our newsletter
+                    </p>
+                    <input type="email" placeholder="Enter your email">
+                    <button>
                         Subscribe
                     </button>
-            </form>
-            <div class="woti">
-                <p class="pr">
-                    Follow us
-                </p>
-                <ul class="social">
-                    <li>
-                        <a href="">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-            </div>
+                </form>
+                <div class="woti">
+                    <p class="pr">
+                        Follow us
+                    </p>
+                    <ul class="social">
+                        <li>
+                            <a href="">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                </div>
 
-        </div>
-    </footer>
+            </div>
+        </footer>
+    </section>
+
     <script>
+        const menu = document.querySelector('.menu');
+
+        function show() {
+            menu.style.top = '0';
+        }
+
+        function hide() {
+            menu.style.top = '-160vh';
+        }
     </script>
 </body>
 

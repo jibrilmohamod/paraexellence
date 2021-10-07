@@ -14,11 +14,6 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    color: black;
-}
-
-html a {
-    color: black;
 }
 
 
@@ -26,12 +21,12 @@ html a {
 
 nav {
     width: 100%;
-    height: 80px;
+    height: 100px;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #f10000;
+    /* border-bottom: 1px solid #f10000; */
     background-image: url(/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,32 +34,34 @@ nav {
     background-position: center;
 }
 
-:is(#menu,
-#close) {
-    display: none;
-}
-
-.logo {
-    font-size: 20px;
-    /* font-weight: bold; */
-    color: #f10000;
-    text-transform: uppercase;
-}
-
 nav a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-nav ul {
+.menu {
+    flex-basis: 40%;
+}
+
+.fas {
+    display: none;
+}
+
+.menu ul {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
 }
 
-nav ul li a {
-    font-size: 18px;
-    color: rgb(255, 255, 255);
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.5s;
 }
 
 
@@ -111,6 +108,14 @@ article:hover {
     transition: 1s;
 }
 
+.two {
+    border-color: #61b7ec;
+}
+
+.three {
+    border-color: #88e45d;
+}
+
 .one:hover {
     border: 10px solid #f10000;
     transition: 1s;
@@ -118,38 +123,12 @@ article:hover {
 
 .two:hover {
     border-color: #25b4d8;
+    box-shadow: 4px 4px 10px #16c1ec;
 }
 
 .three:hover {
     border-color: #14c71a;
-}
-
-.two .pur {
-    border-color: #25b4d8;
-    color: #25b4d8;
-}
-
-.two .pur:hover {
-    border-color: #25b4d8;
-    color: #fff;
-}
-
-.two .pur:hover::after {
-    background-color: #25b4d8;
-}
-
-.three.pur {
-    border-color: #14c71a;
-    color: #14c71a;
-}
-
-.three.pur:hover {
-    border-color: #14c71a;
-    color: #fff;
-}
-
-.three.pur:hover::after {
-    background-color: #14c71a;
+    box-shadow: 4px 4px 10px #14c71a;
 }
 
 p {
@@ -186,8 +165,8 @@ p[class=top] {
     z-index: 0;
     background: #fff;
     overflow: hidden;
-    border: 2px solid #ff0a78;
-    color: #ff0a78;
+    border: 2px solid #ff0a0a;
+    color: #ff0a0a;
 }
 
 .pur:hover {
@@ -207,11 +186,48 @@ p[class=top] {
     top: 0;
     height: 0;
     width: 100%;
-    background: #ff0a78;
+    background: #ff0a0a;
+}
+
+.two .pur {
+    border-color: #25b4d8;
+    color: #25b4d8;
+}
+
+.two .pur:hover {
+    border-color: #25b4d8;
+    color: #fff;
+}
+
+.two .pur:hover::after {
+    background-color: #25b4d8;
+}
+
+.three .pur {
+    border-color: #14c71a;
+    color: #14c71a;
+}
+
+.three .pur:hover {
+    border-color: #14c71a;
+    color: #fff;
+}
+
+.three .pur:hover::after {
+    background-color: #14c71a;
 }
 
 
 /* footer styling */
+
+.footer {
+    width: 100%;
+    background-image: url(/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
 
 footer {
     display: flex;
@@ -220,6 +236,7 @@ footer {
     align-items: center;
     margin: auto;
     justify-content: space-between;
+    color: rgb(251, 255, 8);
 }
 
 .footer-col {
@@ -242,6 +259,7 @@ ul:is(.Company,
     line-height: 2em;
     font-weight: 300;
     font-size: 1em;
+    color: #fff;
 }
 
 ul:is(.Company,
@@ -261,9 +279,9 @@ ul:is(.Company,
 
 input[type="email"] {
     height: 40px;
-    border: 1px solid #0735ee;
-    margin-right: 5px;
-    font-size: ;
+    width: 100%;
+    border: 1px solid #6b6c70;
+    margin-bottom: 5px;
 }
 
 input[type="email"]:focus {
@@ -325,12 +343,16 @@ button:after {
     font-size: 1.4em;
 }
 
+.social li a {
+    color: #fff;
+}
+
 i[class="fab fa-facebook"]:hover {
     color: #4267B2;
 }
 
 i[class="fab fa-twitter"]:hover {
-    color: #1DA1F2;
+    color: #1d2bf2;
 }
 
 i[class="fab fa-instagram"]:hover {
@@ -339,3 +361,70 @@ i[class="fab fa-instagram"]:hover {
 
 
 /* media querries */
+
+@media screen and (max-width: 768px) {
+    .tres {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        justify-content: stretch;
+        align-items: stretch;
+    }
+    footer {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .menu {
+        position: absolute;
+        top: -160vh;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url(/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background.jpg);
+        z-index: 34;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        transition: all 0.8s ease;
+    }
+    .fas {
+        display: block;
+        font-size: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: space-between;
+        gap: 40px;
+    }
+    .menu .fas {
+        font-size: 40px;
+    }
+    .menu .fas:hover {
+        color: #ee0707;
+    }
+    .menu ul li a {
+        font-size: 1.9em;
+        font-weight: bold;
+        text-align: left;
+    }
+    .menu ul li a:hover {
+        color: #07eee2;
+    }
+    .wan {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .wot {
+        align-items: center;
+    }
+}
