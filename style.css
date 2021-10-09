@@ -45,7 +45,8 @@ nav a {
     flex-basis: 40%;
 }
 
-.fas {
+:is(#show,
+#hide) {
     display: none;
 }
 
@@ -390,9 +391,10 @@ i[class="fab fa-instagram"]:hover {
         gap: 40px;
         transition: all 0.8s ease;
     }
-    .fas {
+     :is(#show,
+    #hide) {
         display: block;
-        font-size: 20px;
+        font-size: 30px;
         margin-right: 10px;
         cursor: pointer;
     }
